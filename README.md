@@ -4,7 +4,7 @@ A simple flutter app
 
 Name : My cart
 
-<img height="100" src="images/screen-shot.png" width="100"/>
+<img height="750" src="images/screen-shot.png" width="465"/>
 ## Getting Started
 
 This project is a starting point for a Flutter application.
