@@ -1,6 +1,10 @@
 # my_cart
 
-A new Flutter project.
+A simple flutter app
+
+Name : My cart
+
+![](/Users/mohammadalizadeh/android apps/my_cart/images/screen-shot.png)
 
 ## Getting Started
 
