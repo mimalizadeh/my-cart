@@ -4,8 +4,7 @@ A simple flutter app
 
 Name : My cart
 
-![](/Users/mohammadalizadeh/android apps/my_cart/images/screen-shot.png)
-
+<img height="100" src="images/screen-shot.png" width="100"/>
 ## Getting Started
 
 This project is a starting point for a Flutter application.
