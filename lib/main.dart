@@ -16,14 +16,15 @@ class MyApp extends StatelessWidget {
           title: const Text("My cart"),
           backgroundColor: Colors.blueGrey[900],
         ),
-        body: SafeArea(
+        body: const SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const CircleAvatar(
+              CircleAvatar(
                 backgroundImage: AssetImage("images/avatar.jpeg"),
                 radius: 50,
               ),
-              const Text(
+              Text(
                 "Mohammad Alizadeh",
                 style: TextStyle(
                     fontFamily: "Pacifico",
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
                     fontSize: 30,
                     fontWeight: FontWeight.bold),
               ),
-              const Text(
+              Text(
                 "Backend Developer",
                 style: TextStyle(
                     fontFamily: "Dancing",
@@ -40,42 +41,52 @@ class MyApp extends StatelessWidget {
                     fontSize: 20,
                     fontWeight: FontWeight.bold),
               ),
-              Container(
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
-                padding: EdgeInsets.all(15),
-                child: const Row(
-                  children: [
-                    Icon(Icons.phone, color: Colors.blueGrey),
-                    SizedBox(width: 15),
-                    Text(
+                child: ListTile(
+                    leading: Icon(Icons.phone, color: Colors.blueGrey),
+                    title: Text(
                       "+98 915 123 22 33",
                       style: TextStyle(
                           fontWeight: FontWeight.normal,
                           fontFamily: "Pacifico",
                           fontSize: 20,
                           color: Colors.blueGrey),
-                    )
-                  ],
-                ),
+                    )),
               ),
-              Container(
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(15),
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
-                child: const Row(
-                  children: [
-                    Icon(Icons.email,
-                    color: Colors.blueGrey,),
-                    SizedBox(width: 15),
-                    Text("mo2215614@gmail.com",
+                child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color: Colors.blueGrey,
+                    ),
+                    title: Text(
+                      "mo2215614@gmail.com",
+                      style: TextStyle(
+                          fontFamily: "Pacifico",
+                          fontWeight: FontWeight.normal,
+                          fontSize: 20,
+                          color: Colors.blueGrey),
+                    )),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+                child: ListTile(
+                  title: Text(
+                    "www.mo-alizadeh.ir",
                     style: TextStyle(
-                      fontFamily: "Pacifico",
-                      fontWeight: FontWeight.normal,
-                      fontSize: 20,
-                      color: Colors.blueGrey
-                    ),)
-                  ],
+                        color: Colors.blueGrey,
+                        fontSize: 20,
+                        fontWeight: FontWeight.normal,
+                        fontFamily: "Pacifico"),
+                  ),
+                  leading: Icon(
+                    Icons.web,
+                    color: Colors.blueGrey,
+                  ),
                 ),
               )
             ],
